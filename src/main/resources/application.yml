@@ -1,0 +1,32 @@
+server:
+  port: 8081
+client:
+  endpoint: https://random-data-api.com/api/v2/users
+logging:
+  level:
+    root: INFO
+  pattern:
+    console: '%d{dd-MM-yyyy HH:mm:ss} %magenta([%thread]) %highlight(%-5level) %logger.%M
+      - %msg%n'
+openapi:
+  dev-url: http://localhost:8080
+  prod-url: https://open-api.com
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    password: admin
+    url: jdbc:postgresql://localhost:5432/proyectUser
+    username: postgres
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /app.html
