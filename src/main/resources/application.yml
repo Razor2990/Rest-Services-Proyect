@@ -11,20 +11,20 @@ logging:
 openapi:
   dev-url: http://localhost:8080
   prod-url: https://open-api.com
-spring:
-  datasource:
-    driverClassName: org.postgresql.Driver
-    password: admin
-    url: jdbc:postgresql://localhost:5432/proyectUser
-    username: postgres
-  h2:
-    console:
-      enabled: false
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
+#spring:
+  #datasource:
+    #driverClassName: org.postgresql.Driver
+    #password: admin
+    #url: jdbc:postgresql://localhost:5432/proyectUser
+    #username: postgres
+  #h2:
+    #console:
+      #enabled: false
+  #jpa:
+    #hibernate:
+      #ddl-auto: update
+    #properties:
+      #dialect: org.hibernate.dialect.PostgreSQLDialect
 springdoc:
   api-docs:
     path: /api-docs
